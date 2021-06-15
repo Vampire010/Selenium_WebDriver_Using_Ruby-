@@ -13,6 +13,6 @@ class Open_Browser
     element.send_keys "Hello WebDriver!"
     element.submit
     puts "Pass"
-    puts @driver.title
+
 
 end
