@@ -1,6 +1,6 @@
-# frozen_string_literal: true
 require 'selenium-webdriver'
-class Open_Browser
+
+class TakeScreenShot_ex
 
   $driver = Selenium::WebDriver.for :chrome
   def open_brow
@@ -11,21 +11,20 @@ class Open_Browser
     serch_box = $driver.find_element(name: 'q')
     serch_box.send_keys 'Hello Girish'
     sleep 3
-    $driver.manage.window.minimize
-    sleep 3
-    $driver.manage.window.maximize
-    sleep 3
 
   end
 
   def clicker
     search_btn = $driver.find_element(name: 'btnK')
     search_btn.click
-    $driver.manage.window.full_screen
+
+    # Takes and Stores the screenshot in specified path
+    $driver.save_screenshot('/Users/girishg/RubymineProjects/Ruby_Automation/Screenshot/image.png')
+
     sleep 3
   end
 end
-op = Open_Browser.new
+op = TakeScreenShot_ex.new
 op.open_brow
 op.enter
 op.clicker

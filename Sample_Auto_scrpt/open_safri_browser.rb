@@ -4,7 +4,7 @@ class Open_Safri_Browser
 
   #path = "/Users/girishg/RubymineProjects/Ruby_Automation/Browser_Driver/chromedriver"
 
-  driver = Selenium::WebDriver::Safari::Service.driver_path=()
+  #driver = Selenium::WebDriver::Safari::Service.driver_path=()
 
   @driver = Selenium::WebDriver.for :safari
 
@@ -30,7 +30,7 @@ class Open_Safri_Browser
   puts " Page_Title is :  #{crnt_title}"
 
   #Close the tab or window
-  driver.close
+  #driver.close
   def teardown
     #@driver.quit
   end
