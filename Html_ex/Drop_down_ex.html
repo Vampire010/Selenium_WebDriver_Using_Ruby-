@@ -1,0 +1,21 @@
+<html>
+<body>
+<form id="dropdowndemo">
+    <select id="multiselectdd">
+        <option  value = "Mumbai_City">  Mumbai</option>
+        <option value = "Pune_City" >Pune</option>
+        <option value = "Nagpur_City">Nagpur</option>
+        <option value = "Solapur_City" >Solapur</option>
+        <option value = "Latur_City" >Latur</option>
+    </select>
+    <input type="button" onclick="multipleFunc()" value="Select multiple options">
+</form>
+<p>Multiple options can be selected here .Please press ctrl key and select multiple options at a time. </p>
+<script>
+    function multipleFunc() {
+        document.getElementById("multiselectdd").multiple = true;
+    }
+</script>
+</body>
+</html>
+
