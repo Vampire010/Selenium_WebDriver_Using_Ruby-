@@ -20,3 +20,8 @@ class Google_Chrome_test
 
 end
 
+br = Browser_Server.new
+br.Open_browser('chrome', 'https://www.google.com/')
+tc=Google_Chrome_test.new
+tc.Load_Data_Page
+
